@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div>
+    <acme-navbar />
+  </div>
+
+  <div class="jumbotron text-center">
+    <p class="lead">
+      todo app
+    </p>
+    <div ng-include="'app/components/todo.form.html'"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="todo in main.todos">
+        <div ng-include="'app/components/todo.html'"></div>
+    </div>
+  </div>
+
+</div>
